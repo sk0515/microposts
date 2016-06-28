@@ -11,4 +11,5 @@ class User < ActiveRecord::Base
                        on: :update
     validates :location, absence: true, 
                        on: :create
+                       has_many :microposts
 end
